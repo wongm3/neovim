@@ -5,6 +5,7 @@ return {
     neotree = true,
     telescope = {
       enabled = false,
-    }
+    },
+    treesitter = true
   }
 }
