@@ -1,6 +1,6 @@
 local map = vim.keymap.set
 
-map('n', '<C-k>', ':wincmd k<CR>')
-map('n', '<C-j>', ':wincmd j<CR>')
-map('n', '<C-h>', ':wincmd h<CR>')
-map('n', '<C-l>', ':wincmd l<CR>')
+--map('n', '<c-k>', ':wincmd k<CR>')
+--map('n', '<c-j>', ':wincmd j<CR>')
+--map('n', '<c-h>', ':wincmd h<CR>')
+--map('n', '<c-l>', ':wincmd l<CR>')
