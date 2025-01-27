@@ -6,7 +6,12 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
-  config = function()
-    
+  opts = require 'configs.neotree',
+  config = function(_, opts)
+    require('neo-tree').setup(opts)
+
+    local map = vim.keymap.set
+
+    map('n', '<C-n>', ':Neotree filesystem reveal left<CR>', { desc = 'Open neotree' })
   end
 }
