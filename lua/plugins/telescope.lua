@@ -4,12 +4,12 @@ return {
     'nvim-telescope/telescope.nvim',
     branch = '0.1.x',
     dependencies = { 'nvim-lua/plenary.nvim' },
-    opts = function()
-      return require 'configs.telescope'
-    end,
+    opts = require 'configs.telescope',
     config = function(_, opts)
       local telescope = require('telescope')
+
       telescope.setup(opts)
+
       telescope.load_extension('ui-select')
 
       local builtin = require 'telescope.builtin'
