@@ -1,3 +1,5 @@
+local map = vim.keymap.set
+
 return {
   {
     'williamboman/mason.nvim',
@@ -16,6 +18,11 @@ return {
       for _, lsp in ipairs(servers) do
         lspconfig[lsp].setup({})
       end
+
+      map('n', 'K', vim.lsp.buf.hover, { desc = 'lsp hover' })
+      map('n', '<leader>gd', vim.lsp.buf.definition, { desc = 'lsp definition' })
+      map('n', '<leader>gr', vim.lsp.buf.references, { desc = 'lsp references' })
+      map('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'lsp code action' })
     end
   }
 }
