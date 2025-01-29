@@ -12,4 +12,4 @@ o.softtabstop = 2
 
 o.nu = true
 o.rnu = true
-o.scl = "yes"
+o.scl = 'yes'
