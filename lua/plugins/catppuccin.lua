@@ -7,6 +7,7 @@ return {
     flavour = 'macchiato',
     transparent_background = true,
     integrations = {
+      gitsigns = true,
       neotree = true,
       telescope = {
         enabled = false,

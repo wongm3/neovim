@@ -9,5 +9,5 @@ return {
       last_active = '<C-\\>',
       next = '<C-Space>',
     },
-  }
+  },
 }
