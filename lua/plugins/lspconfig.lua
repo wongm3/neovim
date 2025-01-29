@@ -7,10 +7,16 @@ return {
   },
   {
     'williamboman/mason-lspconfig.nvim',
+    dependencies = {
+      'williamboman/mason.nvim'
+    },
     opts = require 'configs.lspconfig'.mason_lspconfig
   },
   {
     'neovim/nvim-lspconfig',
+    dependencies = {
+      'williamboman/mason-lspconfig.nvim'
+    },
     config = function()
       local lspconfig = require 'lspconfig'
       local servers = require 'configs.lspconfig'.servers

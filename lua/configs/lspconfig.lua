@@ -14,6 +14,6 @@ local mason_lspconfig = {
   automatic_installation = true
 }
 
-local servers = { "lua_ls", "html", "ts_ls" }
+local servers = { "lua_ls", "html", "ts_ls", "eslint", "gopls" }
 
 return { mason = mason, mason_lspconfig = mason_lspconfig, servers = servers }
